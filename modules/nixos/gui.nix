@@ -1,5 +1,19 @@
 { pkgs, ... }:
 {
+home = {
+	packages = with pkgs; [
+		keepassxc
+		libreoffice
+		vscodium
+		mpv
+		fuzzel
+		mako
+		wl-clipboard	
+		dolphin
+		gimp
+		blender	
+	];
+};
 programs = {
 	librewolf = {
 		enable = true;
