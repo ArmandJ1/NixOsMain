@@ -17,7 +17,6 @@ home = {
 	mako
 	wl-clipboard	
 	dolphin
-
 	gimp
 	blender	
   ];
@@ -35,17 +34,6 @@ imports = {
   wayland.windowManager.sway = {
 	enable = true;
   };
-  # Configure eza
-  programs.eza = {
-	enable = true;
-	icons = true;
-	extraOptions = [
-		"--group-directories-first"
-		"--header"
-		"--tree"
-	];
-  };
- 
   # Configure chromium
   programs.chromium = {
 	enable = true;
@@ -53,26 +41,11 @@ imports = {
 		pkgs.hunspellDictsChromium.en_US
 	];
   };
-  # Configure zsh
-  programs.zsh = {
-	enable = true;
-	autosuggestion.enable = true;
-	autocd = true;
-	history.ignoreDups = true;
-	historySubstringSearch.enable = true;
-	
- };
   # Configure alacritty
   programs.alacritty = {
 	enable = true;
   };
-  # Configure fzf
-  programs.fzf = {
-	enable = true;
-  	defaultOptions = [
-		"--preview 'cat {}'"
-	];	
-  };
+
 
 
 
