@@ -2,20 +2,18 @@
   pkgs,...
 }:
 {
-  services.greetd = {
-    enable = true;
-    settings = {
-     default_session.command = ''
-      ${pkgs.greetd.tuigreet}/bin/tuigreet \
-        --time \
-        --asterisks \
-        --user-menu \
-        --cmd Hyprland
-    '';
-    };
+wayland.windowManager.hyprland = {
+	enable = true;
+	settings = {
+		"$mod" = "SUPER";
+		"$terminal" = "alacritty";
+		"$menu" = "fuzzel";
+		bind = [
+			"$mod, S, exec, shotman --capture region"
+			#"$mod, Return, exec, alacritty"
+			"$mod, D, exec, fuzzel"
+			"$mod, Z, killall"
+		];
+	};
   };
-
-  environment.etc."greetd/environments".text = ''
-    Hyprland
-  '';
 }
