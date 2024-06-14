@@ -5,41 +5,46 @@
 			zip
 			gzip
 			unzip
-			neovim
-			eza
-			wget
+			nano
 			btop
 			file
+			wget
+			git
 		];
 	};
+	programs = {
+		neovim = {
+			enable = true;
+		};
 	# Configure eza
-	programs.eza = {
-		enable = true;
-		icons = true;
-		extraOptions = [
-			"--group-directories-first"
-			"--header"
-			"--tree"
-		];
-	};
+		eza = {
+			enable = true;
+			icons = true;
+			extraOptions = [
+				"--group-directories-first"
+				"--header"
+				"--tree"
+			];
+		};
 	# Configure fzf
-	programs.fzf = {
-		enable = true;
-	  	defaultOptions = [
-			"--preview 'cat {}'"
-		];	
-	};
+		fzf = {
+			enable = true;
+		  	defaultOptions = [
+				"--preview 'cat {}'"
+			];	
+		};
 	# Configure zellij
-	programs.zellij = {
-		enable = true;
-		enableZshIntegration = true;
-	};
+		zellij = {
+			enable = true;
+			enableZshIntegration = true;
+		};
 	# Configure zsh
-	programs.zsh = {
-		enable = true;
-		autosuggestion.enable = true;
-		autocd = true;
-		history.ignoreDups = true;
-		historySubstringSearch.enable = true;
+		zsh = {
+			enable = true;
+			autosuggestion.enable = true;
+			autocd = true;
+			history.ignoreDups = true;
+			historySubstringSearch.enable = true;
+		};
 	};
 }
