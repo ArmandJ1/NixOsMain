@@ -12,4 +12,9 @@
 			file
 		];
 	};
+	# Configure zellij
+	programs.zellij = {
+		enable = true;
+		enableZshIntegration = true;
+	};
 }
