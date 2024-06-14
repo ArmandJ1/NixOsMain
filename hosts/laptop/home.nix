@@ -25,7 +25,7 @@ imports = {
 	# Configure Hyprland
 	../../modules/nixos/hypr.nix
 	# Configure librewolf
-	../../modules/nixos/librewolf.nix
+	../../modules/nixos/gui.nix
 	# Configure cli
 	../../modules/nixos/cli.nix
 };
