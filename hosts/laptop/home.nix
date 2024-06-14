@@ -3,23 +3,12 @@ let
 downloadDirectory ="/home/alex/Downloads/tmp";
 in
 {
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
-  home.username = "alex";
-  home.homeDirectory = "/home/alex";  
+home = {
+  username = "alex";
+  homeDirectory = "/home/alex";  
 
-  # This value determines the Home Manager release that your configuration is
-  # compatible with. This helps avoid breakage when a new Home Manager release
-  # introduces backwards incompatible changes.
-  #
-  # You should not change this value, even if you update Home Manager. If you do
-  # want to update the value, then make sure to first check the Home Manager
-  # release notes.
-  home.stateVersion = "23.11"; # Please read the comment before changing.
-
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
-  home.packages = with pkgs; [
+  stateVersion = "23.11"; # Please read the comment before changing.
+  packages = with pkgs; [
 	keepassxc
 	libreoffice
 	vscodium
@@ -32,6 +21,7 @@ in
 	gimp
 	blender	
   ];
+};
 imports = {
 	# Configure Hyprland
 	../../modules/nixos/hypr.nix
@@ -72,11 +62,6 @@ imports = {
 	historySubstringSearch.enable = true;
 	
  };
-  # Configure zellij
-  programs.zellij = {
-	enable = true;
-	enableZshIntegration = true;
-  };
   # Configure alacritty
   programs.alacritty = {
 	enable = true;
