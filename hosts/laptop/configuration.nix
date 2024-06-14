@@ -69,14 +69,6 @@
   # List packages installed in system profile. 
   environment.systemPackages = with pkgs; [
 	shotman
-	zip
-	gzip
-	unzip
-	vim
-	eza
-	wget
-	btop
-	file
   ];
 
   # List fonts installed
