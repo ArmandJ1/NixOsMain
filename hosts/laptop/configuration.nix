@@ -66,11 +66,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. 
-  environment.systemPackages = with pkgs; [
-	shotman
-  ];
-
   # List fonts installed
   fonts = {
 	enableDefaultPackages = true;
