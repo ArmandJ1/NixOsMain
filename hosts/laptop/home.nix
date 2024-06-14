@@ -8,18 +8,6 @@ home = {
   homeDirectory = "/home/alex";  
 
   stateVersion = "24.05"; # Please read the comment before changing.
-  packages = with pkgs; [
-	keepassxc
-	libreoffice
-	vscodium
-	mpv
-	fuzzel
-	mako
-	wl-clipboard	
-	dolphin
-	gimp
-	blender	
-  ];
 };
 imports = {
 	# Configure Hyprland
@@ -34,20 +22,6 @@ imports = {
   wayland.windowManager.sway = {
 	enable = true;
   };
-  # Configure chromium
-  programs.chromium = {
-	enable = true;
-	dictionaries = [
-		pkgs.hunspellDictsChromium.en_US
-	];
-  };
-  # Configure alacritty
-  programs.alacritty = {
-	enable = true;
-  };
-
-
-
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
