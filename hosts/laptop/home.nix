@@ -7,7 +7,7 @@ home = {
   username = "alex";
   homeDirectory = "/home/alex";  
 
-  stateVersion = "23.11"; # Please read the comment before changing.
+  stateVersion = "24.05"; # Please read the comment before changing.
   packages = with pkgs; [
 	keepassxc
 	libreoffice
