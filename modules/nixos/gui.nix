@@ -11,7 +11,9 @@ home = {
 		wl-clipboard	
 		dolphin
 		gimp
-		blender	
+		blender
+		pulseaudio
+		kitty
 	];
 };
 programs = {
@@ -21,10 +23,6 @@ programs = {
 		dictionaries = [
 			pkgs.hunspellDictsChromium.en_US
 		];
-	};
-# Configure alacritty
-	alacritty = {
-		enable = true;
 	};
 
 # Configure librewolf
