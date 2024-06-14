@@ -15,6 +15,19 @@ home = {
 	];
 };
 programs = {
+# Configure chromium
+	chromium = {
+		enable = true;
+		dictionaries = [
+			pkgs.hunspellDictsChromium.en_US
+		];
+	};
+# Configure alacritty
+	alacritty = {
+		enable = true;
+	};
+
+# Configure librewolf
 	librewolf = {
 		enable = true;
 		settings = {
@@ -27,8 +40,9 @@ programs = {
 			"middlemouse.paste" = false;
 			# Set the download loacation
 			"browser.download.dir" = "${downloadDirectory}";
+		};
 	};
-    };
+# Configure thunderbird
 	thunderbird = {
 		enable = true;
 		profiles.default = {
