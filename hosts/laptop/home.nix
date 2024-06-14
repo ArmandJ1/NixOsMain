@@ -33,9 +33,12 @@ in
 	blender	
   ];
 imports = {
-	 # Configure Hyprland
+	# Configure Hyprland
 	../../modules/nixos/hypr.nix
+	# Configure librewolf
 	../../modules/nixos/librewolf.nix
+	# Configure cli
+	../../modules/nixos/cli.nix
 };
 
   # Configure Sway
@@ -52,21 +55,7 @@ imports = {
 		"--tree"
 	];
   };
-  # Configure librewolf
-  programs.librewolf = {
-	enable = true;
-	settings = {
-		# makes the webpage fit a standerd size
-		"privacy.resistFingerprinting.letterboxing" = true;
-		# clear you history and downloads on shutdown
-		"privacy.clearOnShutdown.history" = true;
-		"privacy.clearOnShutdown.downloads" = true;
-		# dissable middle mouse button pastting
-		"middlemouse.paste" = false;
-		# Set the download loacation
-		"browser.download.dir" = "${downloadDirectory}";
-	};
-  };
+ 
   # Configure chromium
   programs.chromium = {
 	enable = true;
