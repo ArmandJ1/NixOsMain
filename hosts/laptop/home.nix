@@ -32,24 +32,15 @@ in
 	gimp
 	blender	
   ];
+imports = {
+	 # Configure Hyprland
+	../../modules/nixos/hypr.nix
+	../../modules/nixos/librewolf.nix
+};
+
   # Configure Sway
   wayland.windowManager.sway = {
 	enable = true;
-  };
-  # Configure Hyprland
-  wayland.windowManager.hyprland = {
-	enable = true;
-	settings = {
-		"$mod" = "SUPER";
-		"$terminal" = "alacritty";
-		"$menu" = "fuzzel";
-		bind = [
-			"$mod, S, exec, shotman --capture region"
-			#"$mod, Return, exec, alacritty"
-			"$mod, D, exec, fuzzel"
-			"$mod, Z, killall"
-		];
-	};
   };
   # Configure eza
   programs.eza = {
