@@ -1,4 +1,4 @@
-# /etc/nixos/modules/nixos/greetd.nix.nix
+# /etc/nixos/modules/nixos/greetd.nix
 { pkgs, ... }:
 {
   services.greetd = {
