@@ -10,7 +10,7 @@ home = {
 		EDITOR = "nvim";
 		VISUAL = "nvim";
 	};
-	stateVersion = "24.05"; # Please read the comment before changing.
+	stateVersion = "23.11"; # Please read the comment before changing.
 };
 imports = {
 	# Configure Hyprland
