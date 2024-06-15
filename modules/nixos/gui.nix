@@ -1,3 +1,4 @@
+# /etc/nixos/modules/nixos/gui.nix
 { pkgs, ... }:
 {
 home = {
