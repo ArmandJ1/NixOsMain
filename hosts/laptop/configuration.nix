@@ -1,4 +1,4 @@
-# /etc/nixos/hosts/vm/configuration.nix
+# /etc/nixos/hosts/laptop/configuration.nix
 
 { config, pkgs, inputs, ... }:
 
