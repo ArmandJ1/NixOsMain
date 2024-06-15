@@ -42,20 +42,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List fonts installed
-  fonts = {
-	enableDefaultPackages = true;
-	packages = with pkgs; [
-		atkinson-hyperlegible
-		hack-font
-	];
-	#fontconfig.defaultFonts = {
-	#	serif = [];
-	#	sansSerif = [];
-	#	monospace = [];
-	#};
-  };
-
   # Enable hyprland
   programs.hyprland = {
 	enable = true;
