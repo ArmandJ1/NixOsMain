@@ -1,3 +1,4 @@
+# /etc/nixos/modules/nixos/main-user.nix
 { lib, config, pkgs, ... }:
 let
 	cfg = config.main-user;
