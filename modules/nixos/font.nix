@@ -1,4 +1,7 @@
-	# List fonts installed
+# /etc/nixos/modules/nixos/font.nix
+{ pkgs, ... }:
+{
+# List fonts installed
  	fonts = {
 		enableDefaultPackages = true;
 		packages = with pkgs; [
@@ -12,3 +15,4 @@
 		#	monospace = [];
 		#};
 	};
+}
