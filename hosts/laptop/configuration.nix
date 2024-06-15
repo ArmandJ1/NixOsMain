@@ -10,6 +10,7 @@
 	# Other modules
 	../../modules/nixos/main-user.nix
 	../../modules/nixos/greetd.nix
+	../../modules/nixos/local.nix
     ];
 
   # Bootloader.
