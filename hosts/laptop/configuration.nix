@@ -11,6 +11,7 @@
 	../../modules/nixos/main-user.nix
 	../../modules/nixos/greetd.nix
 	../../modules/nixos/local.nix
+	../../modules/nixos/font.nix
     ];
 
   # Bootloader.
