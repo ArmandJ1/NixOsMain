@@ -1,3 +1,4 @@
+# /etc/nixos/modules/nixos/cli.nix
 { pkgs, ... }:
 {
 	home = {
