@@ -1,3 +1,4 @@
+# /etc/nixos/modules/nixos/local.nix
 { pkgs, ... }:
 {
 # Set your time zone.
