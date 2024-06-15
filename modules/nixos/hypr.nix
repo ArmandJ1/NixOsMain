@@ -1,3 +1,4 @@
+# /etc/nixos/modules/nixos/hypr.nix
 { pkgs, ... }:
 {
 	wayland.windowManager.hyprland = {
